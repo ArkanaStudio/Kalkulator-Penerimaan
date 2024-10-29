@@ -14,10 +14,10 @@ function tampilkanData() {
     const data = dataPlatMobil[platMobil];
     document.getElementById(
       "data1Display"
-    ).innerHTML = `<div style="padding-bottom: 10px; color:red;"> Tinggi K1 : ${data.data1} || Kepekaan : ${data.data2}</div>`;
+    ).innerHTML = `<div style="padding-bottom: 13px; color:red;"> Tinggi K1 : ${data.data1} || Kepekaan : ${data.data2}</div>`;
     document.getElementById(
       "data2Display"
-    ).innerHTML = `<div style="padding-bottom: 10px; color:red;">Tinggi K2 : ${data.data3} || Kepekaan : ${data.data4.toFixed(2)}</div>`;
+    ).innerHTML = `<div style="padding-bottom: 13px; color:red;">Tinggi K2 : ${data.data3} || Kepekaan : ${data.data4.toFixed(2)}</div>`;
   } else {
     // Reset display jika tidak ada plat yang dipilih
     document.getElementById("data1Display").innerHTML = "";
@@ -49,17 +49,17 @@ function hitungVolume() {
   const hasilInput1 = (8000 / data.data1) * input1 + data.data2;
   document.getElementById(
     "resultInput1"
-  ).innerHTML = `Volume : ${hasilInput1.toFixed(2)} liter`;
+  ).innerHTML = `<div style="margin-top: -10px; margin-bottom: 10px; color:green;">Volume : ${hasilInput1.toFixed(0)} liter </div>`;
 
   // Rumus untuk hasil Input 2: 8000 / data3 * input2 + data4
   const hasilInput2 = (8000 / data.data3) * input2 + data.data4;
   document.getElementById(
     "resultInput2"
-  ).innerHTML = `Volume : ${hasilInput2.toFixed(2)} liter`;
+  ).innerHTML = `<div style="margin-top: -10px; margin-bottom: 10px; color:green;">Volume : ${hasilInput2.toFixed(0)} liter</div>`;
 
   // Jumlahkan hasil dari input 1 dan input 2, tampilkan di bawah tombol
   const totalHasil = hasilInput1 + hasilInput2;
   document.getElementById(
     "totalResult"
-  ).innerHTML = `Total Hasil: ${totalHasil.toFixed(2)} liter`;
+  ).innerHTML = `Total Hasil: ${totalHasil.toFixed(1)} liter`;
 }
