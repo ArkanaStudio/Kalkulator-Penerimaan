@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perhitungan Volume Tangki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Perhitungan Volume Penerimaan</h1>
+        <form id="volumeForm">
+            <label for="platMobil">Pilih Plat Mobil Penerimaan:</label>
+            <select id="platMobil" required onchange="tampilkanData()">
+                <option value="">-- Pilih Plat Mobil --</option>
+                <option value="platA">D9846AH</option>
+                <option value="platB">D9810AH</option>
+                <option value="platC">D9532AH</option>
+                <option value="platD">D9121FG</option>
+            </select>
+
+            <div class="data-display" id="data1Display"></div>
+            <label for="input1">Masukkan Actual Sonding K1 :</label>
+            <input type="number" id="input1" placeholder="Masukkan Tinggi Sonding" required step="any">
+            <div class="result" id="resultInput1"></div>
+
+            <div class="data-display" id="data2Display"></div>
+            <label for="input2">Masukkan Actual Sonding K2 :</label>
+            <input type="number" id="input2" placeholder="Masukkan Tinggi Sonding" required step="any">
+            <div class="result" id="resultInput2"></div>
+
+            <button type="button" onclick="hitungVolume()">Hitung</button>
+            <div class="result" id="totalResult"></div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
