@@ -4,6 +4,7 @@ const dataPlatMobil = {
   platB: { data1: 1335, data2: 0.25, data3: 1340, data4: 0.30 },
   platC: { data1: 1349, data2: 0.25, data3: 1331, data4: 0.25 },
   platD: { data1: 1579, data2: 0.32, data3: 1558, data4: 0.26 },
+  platE: { data1: 1579, data2: 0.4, data3: 1555, data4: 0.4 },
 };
 
 function tampilkanData() {
@@ -46,13 +47,13 @@ function hitungVolume() {
   const data = dataPlatMobil[platMobil];
 
   // Rumus untuk hasil Input 1: 8000 / data1 * input1 + data2
-  const hasilInput1 = (8000 / data.data1) * input1 + data.data2;
+  const hasilInput1 = (input1 - data.data1) / data.data2;
   document.getElementById(
     "resultInput1"
   ).innerHTML = `<div style="margin-top: -10px; margin-bottom: 10px; color:green;">Volume : ${hasilInput1.toFixed(0)} liter </div>`;
 
   // Rumus untuk hasil Input 2: 8000 / data3 * input2 + data4
-  const hasilInput2 = (8000 / data.data3) * input2 + data.data4;
+  const hasilInput2 = (input2 - data.data3) / data.data4;
   document.getElementById(
     "resultInput2"
   ).innerHTML = `<div style="margin-top: -10px; margin-bottom: 10px; color:green;">Volume : ${hasilInput2.toFixed(0)} liter</div>`;
@@ -61,5 +62,5 @@ function hitungVolume() {
   const totalHasil = hasilInput1 + hasilInput2;
   document.getElementById(
     "totalResult"
-  ).innerHTML = `Total Hasil: ${totalHasil.toFixed(1)} liter`;
+  ).innerHTML = `Total Hasil: ${totalHasil.toFixed(0)} liter`;
 }

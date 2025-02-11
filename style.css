@@ -5,7 +5,10 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  background-color: #f4f4f9;
+  background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)), url(IMG-20250102-WA0026.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .container {
   max-width: 400px;
@@ -19,6 +22,8 @@ body {
   text-align: center;
   color: #333;
   margin-bottom: 20px;
+  font-weight: 700;
+  font-family: 'poppins';
 }
 label {
   font-weight: bold;
@@ -40,14 +45,14 @@ button {
   font-size: 16px;
 }
 button {
-  background-color: #4caf50;
+  background-color: #3d96ea;
   color: white;
   border: none;
   cursor: pointer;
   font-size: 18px;
 }
 button:hover {
-  background-color: #45a049;
+  background-color: #50a9fd;
 }
 .result {
   margin-top: 10px;
