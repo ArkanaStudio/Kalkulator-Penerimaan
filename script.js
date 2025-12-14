@@ -1,10 +1,10 @@
 // Data untuk setiap plat mobil dengan 4 nilai per plat
 const dataPlatMobil = {
-  platA: { data1: 1333, data2: 0.28, data3: 1330, data4: 0.38 },
+  platA: { data1: 1333, data2: 0.28, data3: 1330, data4: 0.36 },
   platB: { data1: 1335, data2: 0.25, data3: 1340, data4: 0.30 },
   platC: { data1: 1349, data2: 0.25, data3: 1331, data4: 0.25 },
   platD: { data1: 1579, data2: 0.32, data3: 1558, data4: 0.26 },
-  platE: { data1: 1579, data2: 0.4, data3: 1555, data4: 0.4 },
+  platE: { data1: 1597, data2: 0.4, data3: 1555, data4: 0.4 },
   platF: { data1: 1428, data2: 0.25, data3: 1430, data4: 0.25 },
 };
 
